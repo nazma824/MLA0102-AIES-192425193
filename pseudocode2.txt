@@ -1,0 +1,19 @@
+START
+
+Create graph
+Create empty visited list
+
+FUNCTION DFS(node)
+    Add node to visited
+    Print node
+
+    FOR each neighbour of node
+        IF neighbour not visited
+            Call DFS(neighbour)
+        ENDIF
+    ENDFOR
+END FUNCTION
+
+Call DFS(start node)
+
+STOP
