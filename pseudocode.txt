@@ -1,0 +1,22 @@
+START
+
+Create graph
+Create empty queue
+Create empty visited list
+
+Add starting node to visited
+Add starting node to queue
+
+WHILE queue is not empty
+    Remove first node from queue
+    Print node
+
+    FOR each neighbour of node
+        IF neighbour not visited
+            Add neighbour to visited
+            Add neighbour to queue
+        ENDIF
+    ENDFOR
+ENDWHILE
+
+STOP
