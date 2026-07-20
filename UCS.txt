@@ -1,0 +1,20 @@
+Start
+
+Create a priority queue
+Insert the start node with cost 0
+
+While the priority queue is not empty
+    Remove the node with the lowest cost
+
+    If the node is the goal
+        Print the minimum cost
+        Stop
+
+    If the node is not visited
+        Mark it as visited
+
+        For each neighboring node
+            Calculate new cost
+            Insert neighbor into the priority queue
+
+End
