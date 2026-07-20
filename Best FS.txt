@@ -1,0 +1,20 @@
+Start
+
+Create a priority queue
+Insert the start node using its heuristic value
+
+While the priority queue is not empty
+    Remove the node with the smallest heuristic value
+
+    Print the node
+
+    If the node is the goal
+        Stop
+
+    Mark the node as visited
+
+    For each neighboring node
+        If not visited
+            Insert neighbor into the priority queue using heuristic value
+
+End
