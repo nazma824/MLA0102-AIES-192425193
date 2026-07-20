@@ -1,0 +1,24 @@
+Start
+
+Create a priority queue
+Insert the start node with:
+    f = g + h
+    where g = 0
+
+While the priority queue is not empty
+    Remove the node with the smallest f value
+
+    If the node is the goal
+        Print the minimum cost
+        Stop
+
+    If the node is not visited
+        Mark it as visited
+
+        For each neighboring node
+            Calculate:
+                g = current cost + edge cost
+                f = g + heuristic
+            Insert the neighbor into the priority queue
+
+End
