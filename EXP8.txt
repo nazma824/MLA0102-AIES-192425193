@@ -1,0 +1,9 @@
+
+1.	Start from the root node. 
+2.	Initialize Alpha = -∞ and Beta = +∞. 
+3.	Traverse the game tree using Minimax. 
+4.	Update Alpha for maximizing nodes. 
+5.	Update Beta for minimizing nodes. 
+6.	If Alpha ≥ Beta, prune the remaining branches. 
+7.	Return the optimal value.
+
