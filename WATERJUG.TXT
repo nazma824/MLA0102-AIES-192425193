@@ -1,0 +1,7 @@
+Start with both jugs empty.
+Insert the initial state into a queue.
+Remove the first state from the queue.
+If the goal is reached, print the solution path.
+Generate all possible next states.
+Add unvisited states to the queue.
+Repeat until the goal is found.
