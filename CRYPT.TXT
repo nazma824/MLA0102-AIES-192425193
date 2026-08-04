@@ -1,0 +1,15 @@
+Start.
+Consider the letters S, E, N, D, M, O, R, Y.
+Generate all possible unique digit assignments (0–9).
+Ensure the leading letters S and M are not 0.
+Form the numbers:
+SEND
+MORE
+MONEY
+
+Check whether:
+
+SEND + MORE = MONEY
+If the equation is true, display the digit assignment and the numbers.
+Stop after finding the solution.
+End.
