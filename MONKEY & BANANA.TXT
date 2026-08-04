@@ -1,0 +1,28 @@
+BEGIN
+
+Set Robot = A
+Set Box = B
+Set Banana = C
+Set HasBanana = False
+
+IF Robot ≠ Box THEN
+    Move Robot to Box
+    Robot ← Box
+END IF
+
+IF Box ≠ Banana THEN
+    Push Box to Banana
+    Box ← Banana
+    Robot ← Banana
+END IF
+
+Climb Box
+
+Pick Banana
+HasBanana ← True
+
+IF HasBanana = True THEN
+    Display "Goal Achieved"
+END IF
+
+END
