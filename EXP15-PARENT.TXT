@@ -1,0 +1,22 @@
+START
+
+Define family member facts.
+Define parent relationships.
+Define male and female facts.
+
+Create rules:
+    Father = Parent + Male
+    Mother = Parent + Female
+    Grandparent = Parent of Parent
+    Sibling = Same Parent and Different Persons
+
+Accept a query from the user.
+
+Search the knowledge base.
+
+If the relationship exists
+      Display TRUE or the related person.
+Else
+      Display FALSE.
+
+STOP
