@@ -1,0 +1,22 @@
+START
+
+Define birds:
+    Eagle
+    Sparrow
+    Penguin
+
+Define birds that cannot fly:
+    Penguin
+
+For every bird
+    If bird is not in the cannot-fly list
+          It can fly.
+    Else
+          It cannot fly.
+
+Accept a query.
+
+Display TRUE if the bird can fly.
+Otherwise display FALSE.
+
+STOP
