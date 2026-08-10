@@ -1,0 +1,9 @@
+Start.
+Read the number of regions and colors.
+Read the adjacency matrix.
+Assign a color to each region.
+Check whether adjacent regions have the same color.
+If they have the same color, change the color and check again.
+Continue until all regions have different colors from their adjacent regions.
+Display the color assigned to each region.
+Stop.
