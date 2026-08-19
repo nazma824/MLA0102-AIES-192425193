@@ -1,0 +1,40 @@
+START
+
+Define planetary facts:
+    Mercury → terrestrial
+    Venus → terrestrial
+    Earth → terrestrial
+    Mars → terrestrial
+    Jupiter → gas giant
+    Saturn → gas giant
+    Uranus → ice giant
+    Neptune → ice giant
+
+Define moon facts:
+    Earth → 1 moon
+    Mars → 2 moons
+    Jupiter → 95 moons
+    Saturn → 146 moons
+
+Define inference rules:
+    IF planet type is terrestrial
+        THEN classify as terrestrial planet
+
+    IF planet type is gas giant
+        THEN classify as gas giant planet
+
+    IF planet type is ice giant
+        THEN classify as ice giant planet
+
+    IF number of moons > 0
+        THEN planet has moons
+
+Take a query from the user
+
+Search the facts and apply the rules
+
+Retrieve the matching planetary information
+
+Display the result
+
+STOP
