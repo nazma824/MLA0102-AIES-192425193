@@ -1,0 +1,34 @@
+START
+
+Define fruits with their colors:
+    apple → red
+    banana → yellow
+    orange → orange
+    grape → purple
+    lime → green
+
+Define production rules:
+    IF fruit color is red
+        THEN classify as red_fruit
+
+    IF fruit color is yellow
+        THEN classify as yellow_fruit
+
+    IF fruit color is orange
+        THEN classify as orange_fruit
+
+    IF fruit color is purple
+        THEN classify as purple_fruit
+
+    IF fruit color is green
+        THEN classify as green_fruit
+
+Take fruit as input
+
+Check its color using the fruit facts
+
+Apply the matching production rule
+
+Display the fruit classification
+
+STOP
