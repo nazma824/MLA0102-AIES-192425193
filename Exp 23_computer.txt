@@ -1,0 +1,49 @@
+START
+
+Define the initial facts:
+    computer_not_starting
+    dim_headlights
+
+Define the rules:
+    IF computer_not_starting AND dim_headlights
+        THEN battery_problem
+
+    IF battery_problem
+        THEN battery_inspection
+
+    IF battery_inspection
+        THEN marked_for_service
+
+Input the Goal
+
+Display the Goal
+
+Store all initial facts as Known Facts
+
+IF Goal is already present in Known Facts
+    Display "Fact/Conclusion found"
+    Return TRUE
+
+REPEAT
+
+    Find a rule whose all conditions are present
+    in Known Facts
+
+    IF such a rule is found
+        Derive the conclusion
+        Add the conclusion to Known Facts
+
+        Display "Rule applied" and the new conclusion
+
+        IF the new conclusion equals Goal
+            Display "Goal reached"
+            Return TRUE
+        END IF
+    ELSE
+        Display "Cannot derive Goal"
+        Return FALSE
+    END IF
+
+UNTIL Goal is reached or no new conclusion can be derived
+
+STOP
