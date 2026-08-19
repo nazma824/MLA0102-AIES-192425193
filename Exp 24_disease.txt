@@ -1,0 +1,26 @@
+BACKWARD_CHAINING(Goal)
+
+    Start with Goal
+
+    Find a rule whose conclusion matches Goal
+
+    IF no such rule exists
+        Check whether Goal is a known fact
+        IF yes
+            return TRUE
+        ELSE
+            return FALSE
+
+    Get the conditions of the matching rule
+
+    FOR each condition
+        Treat condition as a new sub-goal
+        Apply BACKWARD_CHAINING to the sub-goal
+
+        IF sub-goal cannot be proved
+            return FALSE
+
+    IF all sub-goals are proved
+        return TRUE
+
+END
