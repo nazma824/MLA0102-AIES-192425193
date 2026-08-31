@@ -1,0 +1,49 @@
+START
+
+Import the required libraries for:
+Data handling
+Numerical operations
+Data visualization
+Dataset splitting
+Feature scaling
+Model evaluation
+Logistic Regression
+Load the dataset diabetes_data.csv.
+Display the first five records of the dataset.
+Display the dataset shape.
+Display dataset information and data types.
+Check and display the number of missing values in each column.
+Separate the dataset into:
+Input features (X) = all columns except Outcome
+Output/target (Y) = Outcome
+Display the input feature names and output column.
+Split the dataset into training and testing sets:
+80% for training
+20% for testing
+Use a fixed random state
+Maintain the same class proportion using stratification
+Create a StandardScaler.
+Fit the scaler using the training data.
+Transform the training and testing data using the scaler.
+Create a Logistic Regression model.
+Train the Logistic Regression model using the scaled training data.
+Use the trained model to predict outcomes for the testing data.
+Calculate the prediction accuracy.
+Display the accuracy and accuracy percentage.
+Generate the confusion matrix.
+Display the confusion matrix.
+Generate and display the classification report containing:
+Precision
+Recall
+F1-score
+Support
+Create the input data for a new patient.
+Scale the new patient's data using the previously fitted scaler.
+Use the trained Logistic Regression model to predict the new patient's outcome.
+IF prediction = 1:
+Display "Prediction: Diabetic"
+
+ELSE:
+
+Display "Prediction: Not Diabetic"
+STOP.
