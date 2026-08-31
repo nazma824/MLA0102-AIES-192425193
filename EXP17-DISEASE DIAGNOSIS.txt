@@ -1,0 +1,52 @@
+BEGIN
+
+1. Define the knowledge base containing:
+      Disease → List of Symptoms
+
+2. Define DIAGNOSE(patient_symptoms)
+
+      a. Create an empty dictionary disease_scores.
+
+      b. FOR each disease and its symptoms in the knowledge base:
+            i. Find the symptoms common to both
+               patient_symptoms and disease symptoms.
+           
+           ii. Count the number of matching symptoms.
+           
+          iii. IF at least one symptom matches:
+                   Store disease and its matching count
+                   in disease_scores.
+
+      c. IF disease_scores is empty:
+             RETURN "No matching disease"
+
+      d. Find the maximum matching symptom count.
+
+      e. Create an empty list possible_diseases.
+
+      f. FOR each disease and its score:
+             IF score equals the maximum score:
+                    Add disease and score to possible_diseases.
+
+      g. RETURN possible_diseases.
+
+3. Display "MEDICAL EXPERT SYSTEM".
+
+4. Ask the user to enter patient symptoms separated by commas.
+
+5. Convert the entered symptoms to lowercase
+   and remove unnecessary spaces.
+
+6. Call DIAGNOSE(patient_symptoms).
+
+7. IF a disease is found:
+      FOR each possible disease:
+           Display disease name.
+           Display number of matching symptoms.
+
+   ELSE:
+      Display "No matching disease found."
+
+8. Display "Diagnosis completed."
+
+END
