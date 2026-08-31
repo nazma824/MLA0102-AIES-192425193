@@ -1,0 +1,27 @@
+BEGIN
+
+    Define diet(Age, BMI, Condition, Plan)
+
+    IF Age >= 18 AND BMI >= 25 AND Condition = diabetes THEN
+        Plan ← "Low sugar and low calorie diet"
+
+    ELSE IF Age >= 18 AND BMI >= 25 AND Condition = hypertension THEN
+        Plan ← "Low salt and low fat diet"
+
+    ELSE IF Age >= 18 AND BMI >= 18.5 AND BMI < 25
+            AND Condition = none THEN
+        Plan ← "Balanced healthy diet"
+
+    ELSE IF Age >= 18 AND BMI < 18.5
+            AND Condition = none THEN
+        Plan ← "High calorie nutritious diet"
+
+    ELSE IF Age >= 18 AND BMI >= 25
+            AND Condition = none THEN
+        Plan ← "Low calorie high fiber diet"
+
+    END IF
+
+    Display Plan
+
+END
