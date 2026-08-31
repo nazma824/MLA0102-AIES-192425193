@@ -1,0 +1,36 @@
+BEGIN
+
+Create dataset with Age, Income and Credit Score
+
+Store loan status:
+    1 = Approved
+    0 = Rejected
+
+FOR each customer in dataset
+    Display customer details
+    Display corresponding loan status
+END FOR
+
+Define PREDICT(age, income, credit)
+
+    IF credit >= 700 THEN
+        RETURN "APPROVED"
+
+    ELSE IF income >= 50000 AND credit >= 650 THEN
+        RETURN "APPROVED"
+
+    ELSE
+        RETURN "REJECTED"
+    END IF
+
+END PREDICT
+
+Read new customer's Age
+Read new customer's Income
+Read new customer's Credit Score
+
+Call PREDICT with customer details
+
+Display Loan Status
+
+END
