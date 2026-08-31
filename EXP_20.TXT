@@ -1,0 +1,25 @@
+START
+
+1. Create a Person DOB Knowledge Base.
+2. Store each person's:
+      DOB, Name, Age, Gender,
+      Address, Phone and Occupation.
+
+3. Read the DOB from the user.
+
+4. Check whether the DOB exists in the Knowledge Base.
+
+5. IF DOB exists:
+      Retrieve the person's complete details.
+      Display Name.
+      Display DOB.
+      Display Age.
+      Display Gender.
+      Display Address.
+      Display Phone.
+      Display Occupation.
+
+6. ELSE:
+      Display "Person not found".
+
+END
